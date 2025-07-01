@@ -3,16 +3,16 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
+  { name: "HTML/CSS", category: "frontend" },
+  { name: "JavaScript",  category: "frontend" },
+  { name: "React",  category: "frontend" },
   // { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "Tailwind CSS",  category: "frontend" },
+  { name: "Next.js",  category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Python", level: 75, category: "backend" },
+  { name: "Node.js",  category: "backend" },
+  { name: "Python",  category: "backend" },
   // { name: "Express", level: 75, category: "backend" },
   // { name: "MongoDB", level: 70, category: "backend" },
   // { name: "PostgreSQL", level: 65, category: "backend" },
@@ -21,9 +21,9 @@ const skills = [
   // Tools
   // { name: "Git/GitHub", level: 90, category: "tools" },
 
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Scratch", level: 80, category: "tools" },
+  { name: "Figma",  category: "tools" },
+  { name: "VS Code",  category: "tools" },
+  { name: "Scratch",  category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -67,16 +67,16 @@ export const SkillsSection = () => {
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg"> {skill.name}</h3>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+              {/* <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
+                  // style={{ width: skill.level + "%" }}
                 />
-              </div>
+              </div> */}
 
               <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
-                  {skill.level}%
+                  {/* {skill.level}% */}
                 </span>
               </div>
             </div>
