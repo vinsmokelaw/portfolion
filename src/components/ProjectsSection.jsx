@@ -26,7 +26,7 @@ const projects = [
     title: "Drape",
     description:
       "A modern fashion e-commerce website designed to showcase clothing collections through an elegant and responsive user interface. The platform delivers a seamless shopping experience with intuitive navigation and visually appealing product displays.",
-    image: "projects/drape.jpeg",
+    image: "projects/drape.jpg",
     tags: ["Next.js", "Tailwind CSS"],
     demoUrl: "https://drape-eight.vercel.app/",
     githubUrl: "https://github.com/vinsmokelaw/drape.git",
