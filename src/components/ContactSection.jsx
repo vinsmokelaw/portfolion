@@ -70,10 +70,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium text-left"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel+263789969943:"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +263789969943
                   </a>
                 </div>
               </div>
@@ -93,13 +93,13 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4 text-left"> Connect With Me</h4>
               <div className="flex space-x-4 justify-content-left">
-                <a href="#" target="_blank">
+                <a href="#" target="www.linkedin.com/in/muchenu-tawanda">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
+                <a href="#" target="">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a href="#" target="https://www.instagram.com/chalant.darkskin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                   <Instagram />
                 </a>
                 <a href="#" target="_blank">
