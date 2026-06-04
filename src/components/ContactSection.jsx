@@ -23,114 +23,154 @@ export const ContactSection = () => {
 
     setTimeout(() => {
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
       });
       setIsSubmitting(false);
     }, 1500);
   };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Get In <span className="text-primary">Touch</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Have a project in mind, a freelance opportunity, or just want to
+          connect? Feel free to reach out. I'm always open to discussing new
+          ideas and collaborations.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6 text-left">
-              {" "}
+            <h3 className="text-2xl font-semibold text-left">
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
+
                 <div>
-                  <h4 className="font-medium text-left"> Email</h4>
+                  <h4 className="font-medium text-left">Email</h4>
                   <a
-                    href="muchenutawanda4@gmail.com"
+                    href="mailto:muchenutawanda4@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     muchenutawanda4@gmail.com
                   </a>
                 </div>
               </div>
+
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
+
                 <div>
-                  <h4 className="font-medium text-left"> Phone</h4>
+                  <h4 className="font-medium text-left">Phone</h4>
                   <a
-                    href="tel+263789969943:"
+                    href="tel:+263789969943"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +263789969943
+                    +263 789 969 943
                   </a>
                 </div>
               </div>
+
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
+
                 <div>
-                  <h4 className="font-medium text-left"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                  <h4 className="font-medium text-left">Location</h4>
+                  <p className="text-muted-foreground">
                     Harare, Zimbabwe
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
 
+            {/* Social Links */}
             <div className="pt-8">
-              <h4 className="font-medium mb-4 text-left"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-content-left">
-                <a href="#" target="www.linkedin.com/in/muchenu-tawanda">
-                  <Linkedin />
+              <h4 className="font-medium mb-4 text-left">
+                Connect With Me
+              </h4>
+
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/muchenu-tawanda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5 text-primary" />
                 </a>
-                <a href="#" target="">
-                  <Twitter />
+
+                {/* Replace with your Twitter/X profile if you have one */}
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="h-5 w-5 text-primary" />
                 </a>
-                <a href="#" target="https://www.instagram.com/chalant.darkskin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                  <Instagram />
+
+                <a
+                  href="https://www.instagram.com/chalant.darkskin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5 text-primary" />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+
+                {/* Replace with your Twitch profile if applicable */}
+                <a
+                  href="https://www.twitch.tv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors"
+                  aria-label="Twitch"
+                >
+                  <Twitch className="h-5 w-5 text-primary" />
                 </a>
               </div>
             </div>
           </div>
 
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
-            <h3 className="text-2xl text-left font-semibold mb-6"> Send a Message</h3>
+          {/* Contact Form */}
+          <div className="bg-card p-8 rounded-lg shadow-xs">
+            <h3 className="text-2xl text-left font-semibold mb-6">
+              Send a Message
+            </h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
                   className="block text-left font-medium mb-2"
                 >
-                  {" "}
                   Your Name
                 </label>
+
                 <input
                   type="text"
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Tawanda Muchenu..."
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Tawanda Muchenu"
                 />
               </div>
 
@@ -139,16 +179,16 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-left font-medium mb-2"
                 >
-                  {" "}
                   Your Email
                 </label>
+
                 <input
                   type="email"
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="tawanda@gmail.com"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="your@email.com"
                 />
               </div>
 
@@ -157,15 +197,16 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-left font-medium mb-2"
                 >
-                  {" "}
                   Your Message
                 </label>
+
                 <textarea
                   id="message"
                   name="message"
+                  rows={5}
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I'd like to discuss a project..."
                 />
               </div>
 
