@@ -4,31 +4,32 @@ const projects = [
   {
     id: 1,
     title: "Berries Send Money",
-    description: "a simple application that allows users to send & receive money",
+    description:
+      "A digital money transfer application that enables users to securely send, receive, and manage transactions through an intuitive and user-friendly interface.",
     image: "projects/credit2.jpg",
-    tags: ["React", "TailwindCSS",],
+    tags: ["React", "Tailwind CSS"],
     demoUrl: "https://sendmoneyberries.vercel.app/",
     githubUrl: "https://github.com/vinsmokelaw/sendmoney",
   },
   {
     id: 2,
-    title: "Smart Farms",
+    title: "Agrimo",
     description:
-      "Farming Website that inspired b the technology",
-    image: "projects/smarttfarms.jpeg",
-    tags: ["React.js", "Tailwind", "Supabase"],
-    demoUrl: "https://smart-farms1.vercel.app/",
-    githubUrl: "https://github.com/vinsmokelaw/smart-farms1.git",
+      "A modern agricultural platform designed to connect farmers with valuable resources, information, and digital tools through a responsive and accessible web experience.",
+    image: "projects/agrimo.jpeg",
+    tags: ["Next.js", "Tailwind CSS", "Supabase", "GetStream"],
+    demoUrl: "https://farmers3.vercel.app/",
+    githubUrl: "https://github.com/vinsmokelaw/farmers3.git",
   },
   {
     id: 3,
-    title: "Agrimo",
+    title: "Drape",
     description:
-      "Farming website",
-    image: "projects/agrimo.jpeg",
-    tags: ["Next.js", "Tailwind", "Supabase", "GetStream"],
-    demoUrl: "https://farmers3.vercel.app/",
-    githubUrl: "https://github.com/vinsmokelaw/farmers3.git",
+      "A modern fashion e-commerce website designed to showcase clothing collections through an elegant and responsive user interface. The platform delivers a seamless shopping experience with intuitive navigation and visually appealing product displays.",
+    image: "projects/drape.jpeg",
+    tags: ["Next.js", "Tailwind CSS"],
+    demoUrl: "https://drape-eight.vercel.app/",
+    githubUrl: "https://github.com/vinsmokelaw/drape.git",
   },
 ];
 
@@ -37,13 +38,13 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          A selection of projects that showcase my experience in full-stack web
+          development, responsive design, and building user-focused digital
+          solutions using modern technologies.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -72,22 +73,29 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">
+                  {project.title}
+                </h3>
+
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
+
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
                       href={project.demoUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
                     </a>
+
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
@@ -103,9 +111,10 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/vinsmokelaw"
           >
-            Check My Github <ArrowRight size={16} />
+            Check My GitHub <ArrowRight size={16} />
           </a>
         </div>
       </div>
